@@ -33,7 +33,6 @@
 // console.log(maxValue([1,23,4,5,63,23]));
 const calculateaverage = (numbers) => {
     const totalSum = numbers.reduce((num1, num2) => num1 + num2);
-    console.log(totalSum);
     const average = totalSum / numbers.length;
     return average;
 };
