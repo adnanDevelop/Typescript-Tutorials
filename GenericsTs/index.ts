@@ -13,7 +13,15 @@ function getData<T>(value:T):T {
     return value
 }
 
-
 console.log(getData<string>('Adnan'));
-console.log(getData<number>(20));
+console.log(getData<number>(20))
 console.log(getData<boolean>(true));
+
+
+// HOW TO WORK WITH MUTLIPLE TYPES IN GENERIC
+function newData<one ,two >(value:one , valuetwo:two) {
+    console.log(valuetwo , value);
+};
+
+newData<string , boolean>('adnan' , true);
+

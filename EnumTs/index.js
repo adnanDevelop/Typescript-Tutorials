@@ -31,7 +31,7 @@ const isUser = (value) => {
 };
 const driverOne = ['Adnan', 26, true];
 const drivertwo = ['Hanan', 28, false];
-driverOne.push('adnan');
+// driverOne.push('adnan')    readonly laganay sy ab compilor error dega k is tarah hum array main new  elements add nai ker sakty.
 const haveLicense = (value) => {
     const [name, age, license] = value;
     console.log(`Name : ${name} his/her age is : ${age} and have license ${license ? 'true' : 'false'}`);
